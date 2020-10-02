@@ -2,12 +2,12 @@
 
 ## Project Links
 
-- [add your github repo link]()
+- [Unit2-React](https://github.com/kilahsw/Unit2-React)
 - [add your deployment link]()
 
 ## Project Description
 
-Description goes here
+'CONGRESS: Legalize Dance' Videos. I produce a live dance show called CONGRESS, and the app I create will be a source where users can play the video compilations for each of our Volumes. The home page will have a decription of CONGRESS and, when the user clicks a thumbnail video, it will display the full size video that the user can play. The page will also have the video's description which is a list of choreographers. There will be a button the user can click to go back to the home page. 
 
 ## API
 
@@ -23,22 +23,25 @@ Use this section to include info about the API you have chosen and a code snippe
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [Wireframes](https://wireframepro.mockflow.com/view/M6cc7e221ab49683ae92aa5dff3f0f2991600053971849)
+- [Architecture](https://docs.google.com/drawings/d/1eHNqMIDQF2ImviZ2lnJZRHTO0t3WvnpqmLAk3oUc0Yo/edit)
 
 
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP EXAMPLE
-- Find and use external api 
-- Render data on page 
-- Allow user to interact with the page
+#### MVP 
+- Third party API
+- 5 components
+- 2 routes
+- Flexbox or Grid
+- useState
+- Netlify
 
-#### PostMVP EXAMPLE
+#### PostMVP 
 
-- Add localStorage or firebase for storage
+- n/a
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
