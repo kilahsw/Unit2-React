@@ -7,7 +7,7 @@
 
 ## Project Description
 
-'CONGRESS: Legalize Dance' Videos. I produce a live dance show called CONGRESS, and the app I create will be a source where users can play the video compilations for each of our Volumes. The home page will have a decription of CONGRESS and, when the user clicks a thumbnail video, it will display the full size video that the user can play. The page will also have the video's description which is a list of choreographers. There will be a button the user can click to go back to the home page. 
+'CONGRESS: Legalize Dance' Videos. I produce a live dance show called CONGRESS, and the app I create will be a resource where users can play the video compilations for each of our Volumes. The home page will have a decription of CONGRESS and, when the user clicks a thumbnail video, it will display the full size video that the user can play. The page will also have the video's description which is a list of choreographers. There will be a button the user can click to go back to the home page. 
 
 ## API
 
