@@ -1,33 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Header from './components/Header.js'
-
-let Vimeo = require('vimeo').Vimeo;
-let client = new Vimeo("6a8755f63ed9fbccb479a1e77c8a010cf22e7685", "nczEmbIQFEx/kbJxVQTUilrhz+PVadR4hdcifkeaKeYxZ8mvGBDTsHu4VaMeMatLp+l6Dq1mRmbyAOs5547quakXSWYzCjg9yW7f0RaaurUrQO1uLSOqqt4mSI8R6ABk", "1d7d97b404dd014ed70d7eae1369018f");
-
-client.request({
-  method: 'GET',
-  path: '/users/92457918/videos'
-},
-  function (error, body, status_code, headers) {
-    if (error) {
-      console.log(error);
-    }
-
-    console.log(body);
-  })
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
+import client from './components/Data.js'
+import Home from './components/Home.js'
+import VideoList from './components/VideoList.js'
+import ShowVideo from './components/ShowVideo.js'
 
 
-// method: 'GET',
-//   path: '/tutorial'
+function App (){
 
-function App() {
+const [video, setVideo] = useState ({})
+
+
   return (
-    <div className="App">
-      <Header />
+    <Router>
+      <Switch>
+        <Route exact path="/">
+        <Home />
+        </Route>
+        <Route exact path="/List">
+          <VideoList />
+        </Route>
+        <Route exact path="/Show">
+          <ShowVideo />
+        </Route>
 
-    </div>
+      </Switch>
+    </Router>
   );
 }
 
 export default App;
+
+
+// let Vimeo = require('vimeo').Vimeo;
+// let client = new Vimeo("6a8755f63ed9fbccb479a1e77c8a010cf22e7685", "nczEmbIQFEx/kbJxVQTUilrhz+PVadR4hdcifkeaKeYxZ8mvGBDTsHu4VaMeMatLp+l6Dq1mRmbyAOs5547quakXSWYzCjg9yW7f0RaaurUrQO1uLSOqqt4mSI8R6ABk", "1d7d97b404dd014ed70d7eae1369018f");
+
+// client.request({
+//   method: 'GET',
+//   path: '/users/92457918/videos'
+// },
+//   function (error, body, status_code, headers) {
+//     if (error) {
+//       console.log(error);
+//     }
+
+//     console.log(body);
+//   })
