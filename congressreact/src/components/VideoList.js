@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../congresslogo.png'
+import ShowVideo from './ShowVideo'
 import './VideoList.css'
 
-const showVideo = (video) => {
 
-}
 const VideoList = ({ videos }) => {
     console.log(videos)
 
@@ -16,8 +15,13 @@ const VideoList = ({ videos }) => {
             {videos.map((ele, index) => {
                 console.log(ele)
                 return (
+                    <>
+                    <Link to={`/Show${ele.uri}`}> <img src={ele.pictures.sizes[0].link_with_play_button}/></Link>
 
-                    <a onClick={showVideo(ele)}> <img src={ele.pictures.sizes[0].link_with_play_button} /> </a>
+                    {/* <Link to='/Show/:id' component={ShowVideo} id={ele.uri} video={ele}> */}
+
+                    {/* </Link> */}
+                    </>
                 )
             })}
 
@@ -48,3 +52,8 @@ export default VideoList
                     <div></div>
                 )
             })} */
+
+    // < Link to = {`'/Show'${ele.uri}`} video = { ele } >
+    //     <img src={ele.pictures.sizes[0].link_with_play_button}
+    //     />
+    //                 </Link >

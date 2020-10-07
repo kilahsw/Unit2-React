@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 
-const ShowVideo = (props) => {
-    const videos = props.data
+const ShowVideo = () => {
+    let {id} = useParams();
+    console.log()
     return (
-        <>
-            
-
-        </>
+        <div>
+            {id}
+        </div>
     )
 }
 
