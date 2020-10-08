@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../congresslogo.png'
+import '../App.css'
 import ShowVideo from './ShowVideo'
-import './VideoList.css'
+
+
 
 
 const VideoList = ({ videos }) => {
@@ -11,15 +13,18 @@ const VideoList = ({ videos }) => {
 
     return (
         <div>
-            <Link to="/">
-                <img className="logo" src={Logo} /></Link>
+
+            <header className="logo">
+                <Link to="/">
+                    <img src={Logo} alt='logo' style={{  width:'200px', height: '200px' }} /></Link>
+            </header>
 
             {videos.map((ele, index) => {
                 console.log(ele)
                 return (
-                    <>
-                        <Link to={`/Show${ele.uri}`}> <img src={ele.pictures.sizes[0].link_with_play_button} /></Link>
-                    </>
+                    <div className="thumbs">
+                        <Link to={`/Show${ele.uri}`}> <img src={ele.pictures.sizes[0].link_with_play_button} alt="thumbnails" /></Link>
+                    </div>
                 )
             })}
 

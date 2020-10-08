@@ -5,9 +5,9 @@ import Logo from '../congresslogo.png'
 import Background from '../congressbackground.jpeg'
 const Home = (props) => {
     return (
-        <div>
-            {/* <img className="logo" src={Logo} /> */}
-            <img className="background" src={Background} />
+        <div className='container'>
+            <img src={Background} style={{ width: '100%', height: 'auto' }} />
+            <img className="over-img" src={Logo} style={{ width: '100px', height: '100px;' }} />
         </div>
     )
 }

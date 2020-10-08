@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ReactHtmlParser from 'react-html-parser';
+import '../App.css'
 
 
 const ShowVideo = (props) => {
