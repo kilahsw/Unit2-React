@@ -11,16 +11,14 @@ const VideoList = ({ videos }) => {
 
     return (
         <div>
-            <img className="logo" src={Logo} />
+            <Link to="/">
+                <img className="logo" src={Logo} /></Link>
+
             {videos.map((ele, index) => {
                 console.log(ele)
                 return (
                     <>
-                    <Link to={`/Show${ele.uri}`}> <img src={ele.pictures.sizes[0].link_with_play_button}/></Link>
-
-                    {/* <Link to='/Show/:id' component={ShowVideo} id={ele.uri} video={ele}> */}
-
-                    {/* </Link> */}
+                        <Link to={`/Show${ele.uri}`}> <img src={ele.pictures.sizes[0].link_with_play_button} /></Link>
                     </>
                 )
             })}
@@ -33,16 +31,16 @@ const VideoList = ({ videos }) => {
 
 export default VideoList
 
-    // < img className = "logo" src = { Logo } />
-    // {
-    //     videos.map((ele, index) => {
-    //         console.log(ele)
-    //         return (
+// < img className = "logo" src = { Logo } />
+// {
+//     videos.map((ele, index) => {
+//         console.log(ele)
+//         return (
 
-    //             <p>{ele.name}</p>
-    //         )
-    //     })
-    // }
+//             <p>{ele.name}</p>
+//         )
+//     })
+// }
 
 /* <img className = "logo" src={Logo} />
             {videos.map((ele, index) => {
@@ -53,7 +51,11 @@ export default VideoList
                 )
             })} */
 
-    // < Link to = {`'/Show'${ele.uri}`} video = { ele } >
-    //     <img src={ele.pictures.sizes[0].link_with_play_button}
-    //     />
-    //                 </Link >
+// < Link to = {`'/Show'${ele.uri}`} video = { ele } >
+//     <img src={ele.pictures.sizes[0].link_with_play_button}
+//     />
+//                 </Link >
+
+
+
+{/* <Link to='/Show/:id' component={ShowVideo} id={ele.uri} video={ele}> */ }

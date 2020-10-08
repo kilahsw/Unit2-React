@@ -6,6 +6,7 @@ import VideoList from './components/VideoList.js'
 import ShowVideo from './components/ShowVideo.js'
 
 
+
 function App() {
 
 
@@ -31,7 +32,7 @@ function App() {
       })
   }, [])
 
- 
+
 
   console.log(videos)
 
@@ -42,12 +43,13 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/List">
-          {videos.length <= 0 ? null : <VideoList videos={videos.data}/>}
+          {videos.length <= 0 ? null : <VideoList videos={videos.data} />}
           {/* <VideoList videos={videos} /> */}
           {/* <VideoList videos={videos.data} />} */}
         </Route>
         <Route exact path="/Show/videos/:id">
           <ShowVideo video={videos.data} />
+
         </Route>
 
       </Switch>
