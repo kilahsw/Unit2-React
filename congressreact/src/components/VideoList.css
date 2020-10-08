@@ -1,0 +1,35 @@
+html {
+    background-color:  #D8B983;
+}
+#second {
+    background-color: #D8B983;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 250px;
+}
+.logo {
+    position: fixed;
+    margin-top: -250px;
+    /* justify-content: center; */
+    /* align-items: center;
+    left:45%;
+    padding: 60px;  */
+}
+#thumbs{
+    padding: 5px;
+}
+
+/* /* html {
+    background-color: #D8B983;
+} */
+/* div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+body {
+    margin-top: 250px;
+} */ 

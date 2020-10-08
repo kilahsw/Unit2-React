@@ -1,11 +1,23 @@
 
 .container {
-    position: relative;
+    
+    background: no-repeat center center fixed;
+    position: fixed;
+   
 }
 .over-img {
     position: absolute;
     top: 2%;
     left: 5%;
+}
+
+.text {
+    position: absolute;
+    top: 2%;
+    left: 40%;
+    color: white;
+    font-weight: bold;
+    
 }
 
 
@@ -55,3 +67,8 @@ div > img {
 /* div {
     margin: 0px;
 } */
+
+ /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */

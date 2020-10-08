@@ -1,6 +1,14 @@
-body {
+/* body {
   display: flex;
 }
+
+#thumbs{
+    color: #D8B983;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* padding: 5px; */
+/* } */ 
 
 
 
