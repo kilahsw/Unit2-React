@@ -11,13 +11,17 @@
 
 ## API
 
-Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
+I used Vimeo API for this project and it was interesting because I had to pull/fetch according to their guidelines. I had a learning curve re: pointing to the info I wanted to pull, but they were valuable lessons.
+
+This section pulled and returned the thumbnails which I made into a link
 
 
-```
-{data: {} }
-```
+` <Link to={`/Show${ele.uri}`}> <img className='nails' src={ele.pictures.sizes[0].link_with_play_button} alt="thumbnails" /></Link>`
 
+This returned the videos on my Show page
+
+` const show = video.find(ele => ele.uri === `/videos/${id}`)
+        html = show.embed.html`
 
 ## Wireframes
 
