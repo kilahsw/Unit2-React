@@ -3,10 +3,17 @@
     
     background: no-repeat center center fixed;
     position: fixed;
+    
    
+}
+.background {
+    width: 100%;
+    height: auto;
 }
 .over-img {
     position: absolute;
+    height: 100px;
+    width: 100px;
     top: 2%;
     left: 5%;
 }
@@ -18,6 +25,38 @@
     color: white;
     font-weight: bold;
     
+}
+.p2 {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .over-img {
+        width: 200px;
+        height: 200px;
+    }
+    .text {
+        font-size: 25px;
+    }
+    .p2 {
+        display: block;
+        position: absolute;
+        top: 13%;
+        left: 32%;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 1024px) {
+        
+    .text {
+        font-size: 35px;
+    }
+    .p2 {
+        font-size: 40px;
+    }
+
 }
 
 

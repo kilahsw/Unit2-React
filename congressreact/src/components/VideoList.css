@@ -11,7 +11,9 @@ html {
 }
 .logo {
     position: fixed;
-    margin-top: -250px;
+    margin-top: -240px;
+    width: 200px;
+    height: 200px;
     /* justify-content: center; */
     /* align-items: center;
     left:45%;
@@ -19,6 +21,46 @@ html {
 }
 #thumbs{
     padding: 5px;
+}
+.p3 {
+    margin: 2px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: -3px;
+}
+.p4 {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .p4 {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        margin-top: -3px;
+        font-size: 20px;     
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .p4 {
+        margin-left: 200px;
+        margin-right: 100px;
+        padding-right: 70px;
+    }
+    #thumbs {
+        padding: 20px;
+        margin-left: 20px;
+    }
+    .nails {
+        margin-right: -60px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .p4 {
+        margin-left: 400px;
+    }
 }
 
 /* /* html {
