@@ -26,10 +26,6 @@ function App() {
       })
   }, [])
 
-
-
-  console.log(videos)
-
   return (
     <Router>
       <Switch>
