@@ -33,6 +33,7 @@ button {
 .footer {
     font-size: 15px;
     margin: 20px;
+    color: #E6D2B2;
 }
 
 @media screen and (min-width: 768px) {
