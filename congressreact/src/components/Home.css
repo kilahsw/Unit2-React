@@ -32,31 +32,67 @@
 
 @media screen and (min-width: 768px) {
     .over-img {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     .text {
+        left: 45%;
         font-size: 25px;
     }
     .p2 {
         display: block;
         position: absolute;
-        top: 13%;
-        left: 32%;
+        top: 11%;
+        left: 40%;
         color: white;
         font-weight: bold;
         font-size: 25px;
     }
 }
 @media screen and (min-width: 1024px) {
-        
+      
+    .over-img {
+        width: 300px;
+        height: 300px;
+        left: 2%;
+    }
     .text {
         font-size: 35px;
     }
     .p2 {
+        left: 35%;
         font-size: 40px;
     }
-
 }
 
+@media screen and (min-width: 1440px) {
+    .over-img {
+        width: 400px;
+        height: 400px;
+        top: 1%;
+    }
 
+    .text {
+        line-height: 1.5;
+        font-size: 40px;
+    }
+    .p2 {
+        left: 38%;
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .over-img {
+        width: 600px;
+        height: 600px;
+    }
+    
+    .text {
+        font-size: 70px;
+    }
+
+    .p2 {
+        font-size: 75px;
+    }
+}
