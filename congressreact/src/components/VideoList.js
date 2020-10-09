@@ -16,7 +16,7 @@ const VideoList = ({ videos }) => {
 
             <div className="logo">
                 <Link to="/">
-                    <img src={Logo} alt='logo' /></Link>
+                    <img src={Logo} alt='logo' style={{ width: '250px', height: '250px' }} /></Link>
             </div>
             <p className='p4'>Welcome to CONGRESS <br />We serve as a platform for dance artists of all genres to share their work in an intimate environment. <br />In each Volume we pose a question to our Artists which they explore and interpret through dance. <br /> How does it all come together? <br /> Click any thumbnail for the experience.</p>
 
@@ -66,5 +66,3 @@ export default VideoList
 
 
 {/* <Link to='/Show/:id' component={ShowVideo} id={ele.uri} video={ele}> */ }
-
-// style = {{ width: '200px', height: '200px' }}

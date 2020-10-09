@@ -64,14 +64,20 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+ n/a
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+I was pretty proud of the fact that I figured out how to drill down to the thumbnails in my api...
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+`{videos.map((ele, index) => {
+                console.log(ele)
+                return (
+                    <div id="thumbs">
+                        <Link to={`/Show${ele.uri}`}> <img className='nails' src={ele.pictures.sizes[0].link_with_play_button} alt="thumbnails" /></Link>
+                        <p className="p3">{ele.name}</p>
+                    </div>
+                )
+            })}`
+
 ```

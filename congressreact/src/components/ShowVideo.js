@@ -20,12 +20,12 @@ const ShowVideo = (props) => {
 
     console.log(html)
     return (
-        <div id="third">
-            {/* <iframe src="https://player.vimeo.com/video/304488848?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=190737" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="CONGRESS VOLUME I"></iframe> */}
+        <div id="third" style={{ width: '100%', height: '100%' }}>
             {ReactHtmlParser(html)}
             {/* {id} */}
-            <p>{description}</p>
-            <Link to="/List"><button>Back</button></Link>
+            <p>CON GRESS = STEP TOGETHER</p>
+            <Link to="/List"><button className='button1'>Step Back</button></Link>
+            <Link to="/"><button classname='button2'>Step Home</button></Link>
         </div>
     )
 }

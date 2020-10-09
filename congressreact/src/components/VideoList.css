@@ -1,19 +1,24 @@
+
+
 html {
-    background-color:  #D8B983;
+    background-color:  #E6D2B2;
 }
 #second {
-    background-color: #D8B983;
+    background-color: #2B3035;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 250px;
 }
+.nails {
+    border: 1px solid white;
+}
 .logo {
     position: fixed;
-    margin-top: -240px;
-    width: 200px;
-    height: 200px;
+    margin-top: -250px;
+    padding-bottom: 20px;
+    
     /* justify-content: center; */
     /* align-items: center;
     left:45%;
@@ -27,6 +32,7 @@ html {
     font-size: 10px;
     font-weight: bold;
     margin-left: -3px;
+    
 }
 .p4 {
     display: none;
@@ -37,16 +43,28 @@ html {
         display: block;
         text-align: center;
         font-weight: bold;
-        margin-top: -3px;
-        font-size: 20px;     
+        /* margin-left: 100px; */
+        margin-top: -2px;
+        margin-bottom: 2px;
+        padding-top: 30px;
+        font-size: 15px; 
+        line-height: 1.5;
+            
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .p4 {
+       font-size: 25px; 
     }
 }
 
 @media screen and (min-width: 1440px) {
     .p4 {
-        margin-left: 200px;
-        margin-right: 100px;
-        padding-right: 70px;
+        margin-left: 300px;
+        margin-right: 150px;
+        padding-top: 70px;
+        padding-right: 90px;
     }
     #thumbs {
         padding: 20px;
@@ -59,7 +77,10 @@ html {
 
 @media screen and (min-width: 2560px) {
     .p4 {
-        margin-left: 400px;
+        margin-left: 745px;
+        margin-right: 200px;
+        padding-top: 70px;
+        padding-right: 550px;
     }
 }
 

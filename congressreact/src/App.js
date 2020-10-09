@@ -44,8 +44,6 @@ function App() {
         </Route>
         <Route exact path="/List">
           {videos.length <= 0 ? null : <VideoList videos={videos.data} />}
-          {/* <VideoList videos={videos} /> */}
-          {/* <VideoList videos={videos.data} />} */}
         </Route>
         <Route exact path="/Show/videos/:id">
           <ShowVideo video={videos.data} />
