@@ -1,5 +1,0 @@
-[build]
-  command = "npm run build"
-  build = "build"
-  publish="congressreact/build"
-  base = "path-to-react-app"
