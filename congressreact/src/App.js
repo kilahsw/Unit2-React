@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './components/Home.js'
 import VideoList from './components/VideoList.js'
 import ShowVideo from './components/ShowVideo.js'
-
 
 
 function App() {
@@ -23,11 +21,7 @@ function App() {
       path: '/users/92457918/videos'
     },
       function (error, body, status_code, headers) {
-        if (error) {
-          console.log(error);
-        }
-        console.log(body);
-
+        
         setVideos(body)
       })
   }, [])

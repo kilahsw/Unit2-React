@@ -44,24 +44,26 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - n/a
 
 ## Components
-##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
-
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| App | This will pull in Vimeo data, and set up Router and Switches| 
+| Home| This will hold my background photo as well as the CONGRESS logo and statment. I don't want a Nav in this design. The logo will be clickable.   | 
+| VideoList | This will render the logo (clickable) and video thumbnails | 
+| ShowVideo | This will render the selected video, allow it to be played, and have navigation buttons to get back to the video list and/or Home. | 
+| Footer | This will just hold my company name. It'll render when you navigate to ShowVideo.| 
 
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
+## Timeframe
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Adding Components | H | 1hr| 1hrs | 1hr |
+| Working with API | H | 6hrs| 8hrs | 8hrs |
+| Page Functionality | H | 3hrs| 12hrs | 12hrs |
+| Styling| H | 3hrs| 12hrs | 12hrs |
+| Deploying | H | 1hrs| 3hrs | 3hrs |
+| Total | H | 14hrs| 36hrs | 36hrs |
 
 ## Additional Libraries
  n/a

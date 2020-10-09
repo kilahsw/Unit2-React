@@ -1,5 +1,4 @@
 
-
 html {
     background-color:  #E6D2B2;
 }
@@ -18,12 +17,8 @@ html {
     position: fixed;
     margin-top: -250px;
     padding-bottom: 20px;
-    
-    /* justify-content: center; */
-    /* align-items: center;
-    left:45%;
-    padding: 60px;  */
 }
+
 #thumbs{
     padding: 5px;
 }
@@ -38,28 +33,32 @@ html {
     display: none;
 }
 
+.footer {
+    color: #2B3035
+}
+
 @media screen and (min-width: 768px) {
     .p4 {
         display: block;
         text-align: center;
         font-weight: bold;
-        /* margin-left: 100px; */
         margin-top: -2px;
         margin-bottom: 2px;
         padding-top: 30px;
         font-size: 15px; 
-        line-height: 1.5;
-            
+        line-height: 1.5;      
     }
 }
 
 @media screen and (min-width: 1024px) {
+
     .p4 {
        font-size: 25px; 
     }
 }
 
 @media screen and (min-width: 1440px) {
+
     .p4 {
         margin-left: 270px;
         margin-right: 150px;
@@ -77,6 +76,7 @@ html {
 }
 
 @media screen and (min-width: 2560px) {
+    
     .p4 {
         margin-left: 745px;
         margin-right: 200px;
